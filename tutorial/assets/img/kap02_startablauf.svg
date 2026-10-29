@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 300" width="740" height="300">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5A6572"/>
+    </marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="740" height="300" fill="#FFFFFF"/>
+
+  <rect x="20" y="45" width="88" height="48" rx="8" fill="#E8F0FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="64" y="75" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F5FA8">Start</text>
+
+  <line x1="108" y1="69" x2="152" y2="69" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <polygon points="245,28 332,69 245,110 158,69" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="245" y="63" text-anchor="middle" font-size="15">Taste</text>
+  <text x="245" y="83" text-anchor="middle" font-size="15">gedrückt?</text>
+
+  <line x1="332" y1="69" x2="386" y2="69" stroke="#2E7D32" stroke-width="2.5" marker-end="url(#arg)"/>
+  <text x="359" y="59" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">ja</text>
+
+  <rect x="392" y="43" width="126" height="52" rx="8" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="455" y="67" text-anchor="middle" font-size="15">Taste</text>
+  <text x="455" y="86" text-anchor="middle" font-size="15">loslassen</text>
+
+  <line x1="518" y1="69" x2="562" y2="69" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="568" y="43" width="132" height="52" rx="8" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="634" y="67" text-anchor="middle" font-size="15">3, 2, 1</text>
+  <text x="634" y="86" text-anchor="middle" font-size="15">zählen</text>
+
+  <line x1="634" y1="95" x2="634" y2="134" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="560" y="140" width="148" height="54" rx="8" fill="#E9F5EA" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="634" y="164" text-anchor="middle" font-size="16" font-weight="bold" fill="#2E7D32">loop</text>
+  <text x="634" y="183" text-anchor="middle" font-size="15">fährt los</text>
+
+  <path d="M708 160 C730 160 730 185 708 185" fill="none" stroke="#2E7D32" stroke-width="2.5" marker-end="url(#arg)"/>
+  <text x="732" y="212" text-anchor="end" font-size="14" fill="#2E7D32">endlos</text>
+
+  <line x1="245" y1="110" x2="245" y2="186" stroke="#C25E00" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="257" y="145" text-anchor="start" font-size="14" font-weight="bold" fill="#C25E00">nein</text>
+
+  <rect x="180" y="192" width="130" height="48" rx="8" fill="#FBEEE3" stroke="#C25E00" stroke-width="2.5"/>
+  <text x="245" y="222" text-anchor="middle" font-size="16" font-weight="bold" fill="#C25E00">warten</text>
+
+  <path d="M180 216 L64 216 L64 99" fill="none" stroke="#C25E00" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="112" y="258" text-anchor="middle" font-size="14" fill="#C25E00">dann neu prüfen</text>
+</svg>

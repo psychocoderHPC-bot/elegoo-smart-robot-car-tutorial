@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+
+  <rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F5FA8"/>
+    </marker>
+  </defs>
+
+  <!-- Erste Reihe -->
+  <rect x="20" y="30" width="200" height="76" rx="10" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="120" y="62" font-size="20" font-weight="bold" text-anchor="middle">Winkel setzen</text>
+  <text x="120" y="88" font-size="17" text-anchor="middle">0, 90, 180 Grad</text>
+
+  <rect x="280" y="30" width="200" height="76" rx="10" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="380" y="62" font-size="20" font-weight="bold" text-anchor="middle">400 ms warten</text>
+  <text x="380" y="88" font-size="17" text-anchor="middle">Servo kommt an</text>
+
+  <rect x="540" y="30" width="200" height="76" rx="10" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="640" y="62" font-size="20" font-weight="bold" text-anchor="middle">Abstand messen</text>
+  <text x="640" y="88" font-size="17" text-anchor="middle">in Zentimetern</text>
+
+  <!-- Zweite Reihe -->
+  <rect x="280" y="196" width="200" height="76" rx="10" fill="#FDF0E3" stroke="#C25E00" stroke-width="2.5"/>
+  <text x="380" y="228" font-size="20" font-weight="bold" text-anchor="middle">Drei Positionen?</text>
+  <text x="380" y="254" font-size="17" text-anchor="middle">links, Mitte, rechts</text>
+
+  <rect x="540" y="196" width="200" height="76" rx="10" fill="#EAF6EC" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="640" y="228" font-size="20" font-weight="bold" text-anchor="middle">Besten Weg</text>
+  <text x="640" y="254" font-size="17" text-anchor="middle">waehlen</text>
+
+  <!-- Pfeile -->
+  <line x1="220" y1="68" x2="272" y2="68" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <line x1="480" y1="68" x2="532" y2="68" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <path d="M 640 106 L 640 150 L 380 150 L 380 188"
+        fill="none" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <line x1="480" y1="234" x2="532" y2="234" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <text x="510" y="224" font-size="16" text-anchor="middle">ja</text>
+
+  <!-- Rueckweg: noch nicht drei Positionen -->
+  <path d="M 380 272 L 380 316 L 120 316 L 120 114"
+        fill="none" stroke="#C25E00" stroke-width="3" marker-end="url(#pfeil)" stroke-dasharray="8 5"/>
+  <text x="250" y="308" font-size="16" text-anchor="middle" fill="#C25E00">nein, naechster Winkel</text>
+</svg>

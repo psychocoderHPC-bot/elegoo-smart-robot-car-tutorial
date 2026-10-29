@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+
+  <rect x="0" y="0" width="760" height="460" fill="#FFFFFF"/>
+
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F5FA8"/>
+    </marker>
+  </defs>
+
+  <rect x="250" y="14" width="260" height="56" rx="9" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="380" y="38" font-size="19" font-weight="bold" text-anchor="middle">IR-Empfang</text>
+  <text x="380" y="60" font-size="16" text-anchor="middle">Signal am Pin D9</text>
+
+  <line x1="380" y1="70" x2="380" y2="98" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <rect x="250" y="102" width="260" height="56" rx="9" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="380" y="126" font-size="19" font-weight="bold" text-anchor="middle">Befehl lesen</text>
+  <text x="380" y="148" font-size="16" text-anchor="middle">decodedIRData.command</text>
+
+  <line x1="380" y1="158" x2="380" y2="188" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <polygon points="380,190 500,240 380,290 260,240"
+           fill="#FDF0E3" stroke="#C25E00" stroke-width="2.5"/>
+  <text x="380" y="234" font-size="18" font-weight="bold" text-anchor="middle">Bekannte</text>
+  <text x="380" y="256" font-size="18" font-weight="bold" text-anchor="middle">Taste?</text>
+
+  <!-- nein: nach links -->
+  <line x1="260" y1="240" x2="196" y2="240" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <text x="228" y="230" font-size="16" text-anchor="middle">nein</text>
+  <rect x="40" y="212" width="152" height="56" rx="9" fill="#F5F7FA" stroke="#D6DBE1" stroke-width="2.5"/>
+  <text x="116" y="246" font-size="18" font-weight="bold" text-anchor="middle">ignorieren</text>
+
+  <!-- ja: nach rechts -->
+  <line x1="500" y1="240" x2="564" y2="240" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <text x="532" y="230" font-size="16" text-anchor="middle">ja</text>
+  <rect x="568" y="206" width="152" height="74" rx="9" fill="#EAF6EC" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="644" y="232" font-size="18" font-weight="bold" text-anchor="middle">Aktion</text>
+  <text x="644" y="256" font-size="16" text-anchor="middle">fahren, LED</text>
+
+  <!-- beide Wege nach unten zu resume -->
+  <path d="M 116 268 L 116 350 L 276 350" fill="none" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <path d="M 644 280 L 644 350 L 484 350" fill="none" stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <rect x="280" y="322" width="200" height="56" rx="9" fill="#F5F7FA" stroke="#6A3FA0" stroke-width="2.5"/>
+  <text x="380" y="356" font-size="19" font-weight="bold" text-anchor="middle">resume()</text>
+
+  <text x="380" y="408" font-size="16" text-anchor="middle">command ist die Tastennummer (uint8_t).</text>
+  <text x="380" y="432" font-size="15" text-anchor="middle">decodedRawData ist der ganze 32-Bit-Rahmen.</text>
+</svg>

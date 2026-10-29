@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F5FA8"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="280" fill="#FFFFFF"/>
+
+  <rect x="20" y="85" width="190" height="110" rx="12"
+        fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2"/>
+  <text x="115" y="130" text-anchor="middle" font-family="sans-serif"
+        font-size="24" font-weight="bold" fill="#1B1F24">Handy</text>
+  <text x="115" y="160" text-anchor="middle" font-family="sans-serif"
+        font-size="16" fill="#1B1F24">Bild anzeigen</text>
+
+  <rect x="330" y="40" width="260" height="190" rx="12"
+        fill="#EAF2FB" stroke="#1F5FA8" stroke-width="2"/>
+  <text x="460" y="95" text-anchor="middle" font-family="sans-serif"
+        font-size="24" font-weight="bold" fill="#1B1F24">ESP32</text>
+  <text x="460" y="130" text-anchor="middle" font-family="sans-serif"
+        font-size="16" fill="#1B1F24">Kamera und WLAN</text>
+  <text x="460" y="158" text-anchor="middle" font-family="sans-serif"
+        font-size="16" fill="#1B1F24">rechnet und erkennt</text>
+
+  <rect x="700" y="85" width="180" height="110" rx="12"
+        fill="#F5F7FA" stroke="#2E7D32" stroke-width="2"/>
+  <text x="790" y="130" text-anchor="middle" font-family="sans-serif"
+        font-size="24" font-weight="bold" fill="#1B1F24">Uno</text>
+  <text x="790" y="160" text-anchor="middle" font-family="sans-serif"
+        font-size="16" fill="#1B1F24">Motoren und Servo</text>
+  <text x="790" y="184" text-anchor="middle" font-family="sans-serif"
+        font-size="13" fill="#1B1F24">JSON nur Werksfirmware</text>
+
+  <line x1="210" y1="140" x2="322" y2="140" stroke="#1F5FA8"
+        stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="266" y="118" text-anchor="middle" font-family="sans-serif"
+        font-size="16" font-weight="bold" fill="#1F5FA8">WLAN</text>
+
+  <line x1="590" y1="140" x2="692" y2="140" stroke="#1F5FA8"
+        stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="641" y="112" text-anchor="middle" font-family="sans-serif"
+        font-size="16" font-weight="bold" fill="#1F5FA8">UART 9600</text>
+  <text x="641" y="176" text-anchor="middle" font-family="sans-serif"
+        font-size="15" fill="#1B1F24">JSON</text>
+
+  <text x="450" y="250" text-anchor="middle" font-family="sans-serif"
+        font-size="16" fill="#1B1F24">Die App steuert nur die Werksfirmware.</text>
+  <text x="450" y="272" text-anchor="middle" font-family="sans-serif"
+        font-size="15" fill="#1B1F24">Eigene Sketches 096 und 131 lesen kein JSON.</text>
+</svg>

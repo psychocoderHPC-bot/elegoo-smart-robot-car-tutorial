@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+
+  <rect x="0" y="0" width="760" height="360" fill="#FFFFFF"/>
+
+  <text x="24" y="34" font-size="22" font-weight="bold">Bogenmass und Grad</text>
+
+  <!-- Kreis mit Radius und Bogen der Laenge r -->
+  <circle cx="210" cy="200" r="120" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <circle cx="210" cy="200" r="4" fill="#1B1F24"/>
+  <text x="186" y="222" font-size="16">M</text>
+
+  <!-- Radius r nach rechts -->
+  <line x1="210" y1="200" x2="330" y2="200" stroke="#C25E00" stroke-width="3"/>
+  <text x="266" y="192" font-size="18" font-weight="bold" fill="#C25E00">r</text>
+
+  <!-- zweiter Radius zum Bogenende (57,3 Grad unter der Waagerechten) -->
+  <line x1="210" y1="200" x2="274.8" y2="301" stroke="#6A3FA0" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="244" y="282" font-size="16" fill="#6A3FA0">1 rad</text>
+
+  <!-- Bogen von 0 bis 1 rad -->
+  <path d="M 330 200 A 120 120 0 0 1 274.8 301" fill="none" stroke="#2E7D32" stroke-width="5"/>
+  <text x="344" y="268" font-size="16" fill="#2E7D32">Bogen = r</text>
+
+  <text x="120" y="342" font-size="16">1 rad entspricht 57,3 Grad.</text>
+
+  <!-- Wertetabelle rechts -->
+  <text x="430" y="80" font-size="18" font-weight="bold">Eine volle Drehung</text>
+
+  <circle cx="456" cy="130" r="28" fill="none" stroke="#D6DBE1" stroke-width="3"/>
+  <path d="M 456 102 A 28 28 0 0 1 484 130" fill="none" stroke="#1F5FA8" stroke-width="5"/>
+  <text x="500" y="126" font-size="18">90 Grad = 1,57 rad</text>
+  <text x="500" y="146" font-size="16" fill="#5A6572">ein Viertelkreis</text>
+
+  <circle cx="456" cy="200" r="28" fill="none" stroke="#D6DBE1" stroke-width="3"/>
+  <path d="M 456 172 A 28 28 0 0 1 456 228" fill="none" stroke="#2E7D32" stroke-width="5"/>
+  <text x="500" y="196" font-size="18">180 Grad = 3,14 rad</text>
+  <text x="500" y="216" font-size="16" fill="#5A6572">ein Halbkreis</text>
+
+  <circle cx="456" cy="270" r="28" fill="none" stroke="#1F5FA8" stroke-width="5"/>
+  <text x="500" y="266" font-size="18">360 Grad = 6,28 rad</text>
+  <text x="500" y="286" font-size="16" fill="#5A6572">der ganze Kreis</text>
+
+  <text x="430" y="332" font-size="16" font-weight="bold">360 Grad = 2 pi rad</text>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230">
+  <rect x="0" y="0" width="760" height="230" fill="#FFFFFF"/>
+  <rect x="24" y="52" width="180" height="86" rx="10" fill="#E8F0FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="114" y="86" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1F5FA8">setup</text>
+  <text x="114" y="114" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1B1F24">läuft einmal</text>
+
+  <line x1="204" y1="95" x2="275" y2="95" stroke="#5A6572" stroke-width="3"/>
+  <polygon points="275,95 262,87 262,103" fill="#5A6572"/>
+  <text x="240" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5A6572">Start</text>
+
+  <rect x="285" y="52" width="200" height="86" rx="10" fill="#E9F5EA" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="385" y="86" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">loop</text>
+  <text x="385" y="114" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1B1F24">wiederholt sich</text>
+
+  <path d="M485 95 C540 95 540 175 385 175 C230 175 230 95 285 95"
+        fill="none" stroke="#2E7D32" stroke-width="3"/>
+  <polygon points="285,95 298,88 298,102" fill="#2E7D32"/>
+  <text x="385" y="200" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#2E7D32">endlos, solange Strom fließt</text>
+
+  <text x="545" y="86" font-family="sans-serif" font-size="14" fill="#5A6572">Ein Sketch:</text>
+  <text x="545" y="108" font-family="sans-serif" font-size="14" fill="#5A6572">oben die Pins,</text>
+  <text x="545" y="130" font-family="sans-serif" font-size="14" fill="#5A6572">dann setup,</text>
+  <text x="545" y="152" font-family="sans-serif" font-size="14" fill="#5A6572">dann loop.</text>
+</svg>

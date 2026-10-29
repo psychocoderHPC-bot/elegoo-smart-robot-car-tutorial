@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 232" width="880" height="232">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5A6572"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="232" fill="#FFFFFF"/>
+
+  <rect x="20" y="18" width="240" height="72" rx="9" fill="#E8F0FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="140" y="48" text-anchor="middle" font-size="18">drei Sensoren lesen</text>
+  <text x="140" y="74" text-anchor="middle" font-size="17">A2 · A1 · A0</text>
+
+  <line x1="260" y1="54" x2="304" y2="54" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="310" y="18" width="230" height="72" rx="9" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="425" y="48" text-anchor="middle" font-size="18">Muster prüfen</text>
+  <text x="425" y="74" text-anchor="middle" font-size="17">links · mitte · rechts</text>
+
+  <line x1="540" y1="54" x2="584" y2="54" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="590" y="18" width="250" height="72" rx="9" fill="#FBEEE3" stroke="#C25E00" stroke-width="2.5"/>
+  <text x="715" y="48" text-anchor="middle" font-size="18">Fehlerwert</text>
+  <text x="715" y="76" text-anchor="middle" font-size="19" font-weight="bold" fill="#C25E00">−1 · 0 · +1</text>
+
+  <path d="M715 90 L715 112 L140 112 L140 132" fill="none" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="20" y="138" width="240" height="72" rx="9" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="140" y="168" text-anchor="middle" font-size="18">steer =</text>
+  <text x="140" y="194" text-anchor="middle" font-size="18">Fehler × 90</text>
+
+  <line x1="260" y1="174" x2="304" y2="174" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="310" y="138" width="200" height="72" rx="9" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="410" y="168" text-anchor="middle" font-size="18">Lenkung</text>
+  <text x="410" y="194" text-anchor="middle" font-size="17">Ausschlag</text>
+
+  <line x1="510" y1="174" x2="554" y2="174" stroke="#5A6572" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <rect x="560" y="138" width="300" height="72" rx="9" fill="#E9F5EA" stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="710" y="168" text-anchor="middle" font-size="17">links: 110 + steer</text>
+  <text x="710" y="194" text-anchor="middle" font-size="17">rechts: 110 − steer</text>
+</svg>

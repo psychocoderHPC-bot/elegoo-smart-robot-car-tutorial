@@ -1,0 +1,8 @@
+ELEGOO Smart Robot Car Kit V4.0 2023.02.01/
+dist/build-logs/
+dist/preview.pdf
+*.bak
+*.bak.*
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="490" viewBox="0 0 800 490">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+    .lbl { font-size: 14px; fill: #1F5FA8; }
+    .box { font-size: 18px; font-weight: bold; text-anchor: middle; }
+    .sub { font-size: 13px; text-anchor: middle; }
+    .fuss { font-size: 14px; text-anchor: middle; fill: #1B1F24; }
+  </style>
+
+  <rect x="0" y="0" width="800" height="490" fill="#FFFFFF"/>
+
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F5FA8"/>
+    </marker>
+    <marker id="pfeilWarm" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C25E00"/>
+    </marker>
+  </defs>
+
+  <!-- FOLLOW_LINE -->
+  <rect x="30" y="170" width="190" height="82" rx="10" fill="#E8F0F9"
+        stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="125" y="205" class="box">FOLLOW_LINE</text>
+  <text x="125" y="230" class="sub">Linie folgen, blau</text>
+
+  <!-- OBSTACLE -->
+  <rect x="305" y="28" width="190" height="82" rx="10" fill="#FDF0E3"
+        stroke="#C25E00" stroke-width="2.5"/>
+  <text x="400" y="63" class="box">OBSTACLE</text>
+  <text x="400" y="88" class="sub">Hindernis, rot</text>
+
+  <!-- SEARCH -->
+  <rect x="305" y="312" width="190" height="82" rx="10" fill="#FBF6DE"
+        stroke="#B58A00" stroke-width="2.5"/>
+  <text x="400" y="347" class="box">SEARCH</text>
+  <text x="400" y="372" class="sub">suchen, gelb</text>
+
+  <!-- CROSSING -->
+  <rect x="592" y="78" width="180" height="82" rx="10" fill="#E8F0F9"
+        stroke="#1F5FA8" stroke-width="2.5"/>
+  <text x="682" y="113" class="box">CROSSING</text>
+  <text x="682" y="138" class="sub">Querlinie zaehlen</text>
+
+  <!-- END -->
+  <rect x="592" y="312" width="180" height="82" rx="10" fill="#EAF6EC"
+        stroke="#2E7D32" stroke-width="2.5"/>
+  <text x="682" y="347" class="box">END</text>
+  <text x="682" y="372" class="sub">anhalten, gruen</text>
+
+  <!-- FOLLOW -> OBSTACLE -->
+  <path d="M 120 170 L 120 69 L 300 69" fill="none" stroke="#C25E00"
+        stroke-width="3" marker-end="url(#pfeilWarm)"/>
+  <rect x="128" y="30" width="150" height="37" fill="#FFFFFF"/>
+  <text x="203" y="47" class="lbl" text-anchor="middle">Abstand &lt; 25 cm</text>
+  <text x="203" y="64" class="lbl" text-anchor="middle">oder ungültig</text>
+
+  <!-- FOLLOW -> CROSSING -->
+  <path d="M 220 200 L 500 200 L 500 119 L 587 119" fill="none"
+        stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <rect x="330" y="178" width="150" height="20" fill="#FFFFFF"/>
+  <text x="405" y="194" class="lbl" text-anchor="middle">alle drei schwarz</text>
+
+  <!-- FOLLOW -> SEARCH -->
+  <path d="M 70 252 L 70 353 L 300 353" fill="none" stroke="#B58A00"
+        stroke-width="3" marker-end="url(#pfeilWarm)"/>
+  <rect x="105" y="331" width="180" height="20" fill="#FFFFFF"/>
+  <text x="195" y="347" class="lbl" text-anchor="middle">alle weiss &gt; 300 ms</text>
+
+  <!-- OBSTACLE -> SEARCH -->
+  <path d="M 400 110 L 400 307" fill="none" stroke="#C25E00"
+        stroke-width="3" marker-end="url(#pfeilWarm)"/>
+  <rect x="408" y="238" width="108" height="20" fill="#FFFFFF"/>
+  <text x="462" y="254" class="lbl" text-anchor="middle">gedreht</text>
+
+  <!-- SEARCH -> FOLLOW -->
+  <path d="M 305 368 L 150 368 L 150 257" fill="none" stroke="#1F5FA8"
+        stroke-width="3" marker-end="url(#pfeil)"/>
+  <rect x="180" y="370" width="90" height="20" fill="#FFFFFF"/>
+  <text x="225" y="386" class="lbl" text-anchor="middle">Linie da</text>
+
+  <!-- SEARCH self: 2 s ohne Linie -->
+  <path d="M 495 347 C 560 347 560 397 495 397" fill="none"
+        stroke="#B58A00" stroke-width="3" marker-end="url(#pfeilWarm)"/>
+  <rect x="520" y="405" width="140" height="20" fill="#FFFFFF"/>
+  <text x="590" y="421" class="lbl" text-anchor="middle">2 s: anhalten</text>
+
+  <!-- CROSSING -> FOLLOW -->
+  <path d="M 592 158 L 540 158 L 540 232 L 225 232" fill="none"
+        stroke="#1F5FA8" stroke-width="3" marker-end="url(#pfeil)"/>
+  <rect x="300" y="210" width="200" height="20" fill="#FFFFFF"/>
+  <text x="400" y="226" class="lbl" text-anchor="middle">Linie vorbei, noch nicht 3</text>
+
+  <!-- CROSSING -> END -->
+  <path d="M 682 160 L 682 307" fill="none" stroke="#2E7D32"
+        stroke-width="3" marker-end="url(#pfeil)"/>
+  <rect x="690" y="218" width="88" height="20" fill="#FFFFFF"/>
+  <text x="734" y="234" class="lbl" text-anchor="middle" fill="#2E7D32">3. Linie</text>
+
+  <!-- Sicherheitsfussnote -->
+  <text x="400" y="446" class="fuss">Ungültige Messung (kein Echo) zählt wie ein Hindernis.</text>
+  <text x="400" y="468" class="fuss">Nach 30 s ohne Querlinie stoppt der Rover (END).</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="150" viewBox="0 0 520 150">
+  <style>
+    text { font-family: "Atkinson Hyperlegible", sans-serif; fill: #1B1F24; }
+  </style>
+  <rect x="14" y="46" width="86" height="44" rx="8" fill="#F5F7FA" stroke="#1F5FA8" stroke-width="2"/>
+  <circle cx="40" cy="90" r="9" fill="#1B1F24"/>
+  <circle cx="74" cy="90" r="9" fill="#1B1F24"/>
+  <text x="57" y="40" font-size="13" text-anchor="middle">Auto</text>
+  <rect x="430" y="18" width="16" height="104" rx="4" fill="#D6DBE1" stroke="#1B1F24" stroke-width="2"/>
+  <text x="438" y="140" font-size="13" text-anchor="middle">Hindernis</text>
+  <line x1="104" y1="56" x2="424" y2="56" stroke="#C25E00" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <polygon points="424,56 412,50 412,62" fill="#C25E00"/>
+  <text x="264" y="46" font-size="13" text-anchor="middle" fill="#C25E00">Impuls hin, 40 kHz</text>
+  <line x1="424" y1="88" x2="104" y2="88" stroke="#2E7D32" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <polygon points="104,88 116,82 116,94" fill="#2E7D32"/>
+  <text x="264" y="106" font-size="13" text-anchor="middle" fill="#2E7D32">Echo zurueck</text>
+  <text x="264" y="132" font-size="13" text-anchor="middle">Laufzeit geteilt durch 58 ergibt Zentimeter</text>
+</svg>
